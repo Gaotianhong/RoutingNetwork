@@ -1,6 +1,6 @@
 # RoutingNetwork
 ## 程序初始界面
-<img width="954" alt="初始界面" src="https://user-images.githubusercontent.com/79080003/150135799-9ee2d4a6-473a-4699-942f-d90eb40f55e2.png">
+<img width="640" alt="初始界面" src="https://user-images.githubusercontent.com/79080003/150135799-9ee2d4a6-473a-4699-942f-d90eb40f55e2.png">
 
 ## 生成网络算法
 以添加边的形式生成网络  
