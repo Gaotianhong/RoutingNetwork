@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>842</width>
+    <height>598</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>myApp</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>80</y>
+      <width>120</width>
+      <height>100</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QPushButton" name="create_graph">
+       <property name="text">
+        <string>生成网络</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="top_router">
+       <property name="text">
+        <string>Top10路由器</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="describe_graph">
+       <property name="text">
+        <string>统计描述网络</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>200</y>
+      <width>190</width>
+      <height>161</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout_2">
+     <item row="0" column="0">
+      <widget class="QPushButton" name="addV">
+       <property name="text">
+        <string>增加顶点</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QPushButton" name="addE">
+       <property name="text">
+        <string>增加边</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0" colspan="2">
+      <widget class="QPushButton" name="change_weight">
+       <property name="text">
+        <string>对指定边赋以新的权重</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="0" colspan="2">
+      <widget class="QPushButton" name="routing_table">
+       <property name="text">
+        <string>重新生成路由表</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QPushButton" name="delE">
+       <property name="text">
+        <string>删除边</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QPushButton" name="delV">
+       <property name="text">
+        <string>删除顶点</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QTextEdit" name="textEdit">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>10</y>
+      <width>631</width>
+      <height>581</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>370</y>
+      <width>171</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Zapfino</family>
+      <pointsize>16</pointsize>
+      <weight>50</weight>
+      <italic>true</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>plot your network</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>420</y>
+      <width>133</width>
+      <height>100</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="2" column="0">
+      <widget class="QPushButton" name="draw_degree">
+       <property name="text">
+        <string>绘制节点度分布</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QPushButton" name="draw_network">
+       <property name="text">
+        <string>绘制网络</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="0">
+      <widget class="QPushButton" name="draw_min_tree">
+       <property name="text">
+        <string>绘制最小生成树</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>181</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="res.qrc">:/images/image/networkx.jpg</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
+ <connections/>
+</ui>
